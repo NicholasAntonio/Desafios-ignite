@@ -34,7 +34,7 @@ function setTasksAndSave(newTasks: ITask[]){
 
 
 function addTask(taskTitle:string){
-  setTasks([
+  setTasksAndSave([
     ...tasks,
     {
       id: crypto.randomUUID(),
